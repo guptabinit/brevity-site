@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 249, 250, 251;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-feature-settings: "salt" on, "liga" on;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold font-outfit tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl leading-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl leading-snug;
+  }
+
+  p {
+    @apply text-gray-700 font-manrope leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8 max-w-7xl;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-md transition-all duration-300 shadow-sm;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-50 font-medium py-3 px-6 rounded-md transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-800 hover:bg-secondary-900 text-white font-medium py-3 px-6 rounded-md transition-all duration-300;
+  }
+
+  .btn-accent {
+    @apply bg-accent-600 hover:bg-accent-700 text-white font-medium py-3 px-6 rounded-md transition-all duration-300 shadow-sm;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-card hover:shadow-lg transition-shadow duration-300 overflow-hidden;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 font-outfit;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 mb-10 max-w-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-blue-gradient;
+  }
+
+  .stats-card {
+    @apply flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-soft;
+  }
+
+  .stats-number {
+    @apply text-3xl md:text-4xl font-bold text-primary-600 mb-1;
+  }
+
+  .stats-label {
+    @apply text-sm text-gray-600 font-medium;
+  }
+}
