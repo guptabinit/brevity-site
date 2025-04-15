@@ -12,7 +12,7 @@ interface PageHeaderProps {
 
 export default function PageHeader({bgImage,bg ,title, subtitle, tag }: PageHeaderProps) {
   return (
-    <section className={`bg-${bg ? bg : 'white'} pt-32 pb-16 md:pt-40 md:pb-24 relative overflow-hidden`}>
+    <section className={`bg-${bg ? bg : 'white'} pt-14 pb-16 md:pt-32 md:pb-24 relative overflow-hidden`}>
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary-100 rounded-bl-full opacity-30 -z-10"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-accent-100 rounded-tr-full opacity-30 -z-10"></div>
 
