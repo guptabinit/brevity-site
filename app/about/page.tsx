@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import  BackgroundElements  from "@/components/ui/BackgroundElements"
 import  Button  from "@/components/ui/Button"
 import  SectionHeading  from "@/components/ui/SectionHeading"
-
+import ContactCTA from "@/sections/home/ContactCTA"
 
 export const metadata: Metadata = {
   title: "About Us | Brevity Technologies",
@@ -217,17 +217,7 @@ export default function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to transform your business?</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Contact us today to learn how Brevity Technologies can help you achieve your goals.
-          </p>
-          <Link href="/contact">
-            <Button size="large">Get in Touch</Button>
-          </Link>
-        </div>
-      </section>
+      <ContactCTA/>
     </main>
   )
 }
