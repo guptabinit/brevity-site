@@ -31,7 +31,7 @@ export const Header = () => {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="flex items-center">
-            <Image src="/logo.svg" alt="Brevity Technologies" width={150} height={40} className="h-10 w-auto" />
+            <Image src="/logo.png" alt="Brevity Technologies" width={150} height={40} className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

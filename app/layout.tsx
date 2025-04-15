@@ -58,11 +58,6 @@ export const metadata: Metadata = {
     images: ["https://brevity.tech/twitter-image.jpg"],
     creator: "@brevitytech",
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
   manifest: "https://brevity.tech/site.webmanifest",
     generator: 'v0.dev'
 }
@@ -74,6 +69,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en" className={`scroll-smooth ${inter.variable} ${manrope.variable}`}>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className="font-sans bg-white">
         <Header />
         <main suppressHydrationWarning className="min-h-screen">{children}</main>

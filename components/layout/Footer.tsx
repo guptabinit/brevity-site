@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <Image src="/logo-white.svg" alt="Brevity Technologies" width={180} height={50} className="h-12 w-auto" />
+              <Image src="/logo-white.png" alt="Brevity Technologies" width={90} height={50} className="w-[80%]" />
             </Link>
             <p className="text-white mb-6 max-w-md">
               Brevity Technologies delivers cutting-edge software solutions that transform businesses. Our expertise
