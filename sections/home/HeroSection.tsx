@@ -5,10 +5,11 @@ import Image from "next/image"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import Button from "@/components/ui/Button"
 import banner from "@/public/heroPic2.png"
+import BackendTag from "@/components/backend-by"
 
 export default function HeroSection() {
   return (
-    <section className="pb-24 md:pt-24 md:pb-32 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+    <section className="pb-24 md:pt-14 md:pb-32 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary-100 rounded-bl-full opacity-70 -z-10"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-accent-100 rounded-tr-full opacity-70 -z-10"></div>
@@ -79,6 +80,7 @@ export default function HeroSection() {
               <Button href="/contact" variant="outline">
                 Talk to Us
               </Button>
+              <BackendTag/>
             </div>
           </motion.div>
 
